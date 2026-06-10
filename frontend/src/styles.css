@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-sider {
+  background: #ffffff !important;
+  border-right: 1px solid #e5eaf2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 72px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.brand span {
+  display: block;
+  margin-top: 3px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #ffffff;
+  background: #2563eb;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.app-header h4 {
+  margin: 0;
+}
+
+.app-content {
+  padding: 24px;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.page-header h3 {
+  margin-bottom: 4px;
+}
+
+.page-header .ant-typography {
+  margin-bottom: 0;
+}
+
+.section-row {
+  margin-top: 16px;
+}
+
+.toolbar {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.warning-item + .warning-item {
+  margin-top: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 16px;
+}
+
+.form-grid .ant-input-number {
+  width: 100%;
+}
+
+.detail-card {
+  margin-bottom: 12px;
+}
+
+.form-item-top {
+  margin-top: 16px;
+}
+
+.sn-detail {
+  margin-top: 8px;
+}
+
+.ant-card {
+  border-color: #e5eaf2;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.04);
+}
+
+.ant-menu {
+  border-inline-end: 0 !important;
+  padding: 10px;
+}
+
+.ant-menu-item {
+  min-height: 42px;
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  .app-sider {
+    display: none;
+  }
+
+  .app-header {
+    height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+  }
+
+  .app-content {
+    padding: 16px;
+  }
+
+  .page-header {
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
